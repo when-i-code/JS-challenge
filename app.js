@@ -34,9 +34,29 @@ while (count <= 100) {
 
 } */
 
-let string = "Frontend Simplified"
-//let stringLength = string.length
+// let string = "Frontend Simplified"
+// //let stringLength = string.length
 
-for(i=0; i< string.length; i++) {
-    console.log(`This is the number ${i}  of the string, and its correspinding letter is: ${string[i]}`)
+// for(i=0; i< string.length; i++) {
+//     console.log(`This is the number ${i}  of the string, and its correspinding letter is: ${string[i]}`)
+// }
+
+// let arr = [20,30,40,50,100]
+// let newArr = arr.filter((elem)=> {
+//     console.log(elem)
+//     return true
+// })
+// console.log(newArr)
+
+// let grades = ['A', 'FAIL', 'FAIL']
+// let filteredGrades = grades.filter(comp => comp!='FAIL')
+// console.log(filteredGrades)
+
+let dollars = [1, 5, 10, 3]
+// let cents = dollars.map(i => i*100)
+// console.log(cents)
+let cents = []
+for (i=0; i < dollars.length; i++){
+    cents.push(dollars[i]*100);
 }
+console.log(cents);
