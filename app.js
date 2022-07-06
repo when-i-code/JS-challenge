@@ -52,11 +52,40 @@ while (count <= 100) {
 // let filteredGrades = grades.filter(comp => comp!='FAIL')
 // console.log(filteredGrades)
 
-let dollars = [1, 5, 10, 3]
-// let cents = dollars.map(i => i*100)
-// console.log(cents)
-let cents = []
-for (i=0; i < dollars.length; i++){
-    cents.push(dollars[i]*100);
+// let dollars = [1, 5, 10, 3]
+// // let cents = dollars.map(i => i*100)
+// // console.log(cents)
+// let cents = []
+// for (i=0; i < dollars.length; i++){
+//     cents.push(dollars[i]*100);
+// }
+// console.log(cents);
+
+// let users = [
+//     {
+//         name: "Adriana",
+//         email: "eadre@ss",
+//         password: "adsadsdsa"
+//     },
+//     {
+//         name: "dhashdsh",
+//         email: "ea@sdasddress",
+//         password: "adpassssadsdsa"
+//     }
+// ]
+// function register(name, email, password) {
+//     let newUser = {
+//         name: name,
+//         email: email,
+//         password: password
+//     }
+//         users.push(newUser)
+// }
+// register("Adasda", "asasd", "asdasdas")
+// console.log(users)
+
+
+function changeColor() {
+    console.log('it clicked')
+    document.querySelector('h1').style.color = 'red'
 }
-console.log(cents);
