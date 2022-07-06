@@ -85,16 +85,34 @@ while (count <= 100) {
 // console.log(users)
 
 
-function changeColor() {
-    console.log('it clicked')
-    document.querySelector('h1').style.color = 'red'
-}
-
-const sum = (a, b) => (a + b > 100) ? true : false
-// function sum(a, b) {
-//     if (a + b > 100) {
-//         return true;
-//     } return false; }
+// function changeColor() {
+//     console.log('it clicked')
+//     document.querySelector('h1').style.color = 'red'
 // }
 
-console.log(sum(50, 2))
+// const sum = (a, b) => (a + b > 100) ? true : false
+// // function sum(a, b) {
+// //     if (a + b > 100) {
+// //         return true;
+// //     } return false; }
+// // }
+
+// console.log(sum(50, 2))
+
+// const isZero = x => x <= 0 ? true : false
+// console.log(isZero(-100))
+
+// const isItTrue = x => !x
+// console.log(isItTrue(false))
+
+// const isItZero = x => x!== 0
+// console.log(isItZero(0))
+
+// const calcRemainder = (a, b) => a % b
+// console.log(calcRemainder(7, 8))
+
+// const isOdd = x => x % 2 !== 0
+// console.log(isOdd(15))
+
+const returnOne = x => x % 2 === 0 ?  1 :  -1 
+console.log(returnOne(-5))
