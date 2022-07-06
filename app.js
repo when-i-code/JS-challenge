@@ -89,3 +89,12 @@ function changeColor() {
     console.log('it clicked')
     document.querySelector('h1').style.color = 'red'
 }
+
+const sum = (a, b) => (a + b > 100) ? true : false
+// function sum(a, b) {
+//     if (a + b > 100) {
+//         return true;
+//     } return false; }
+// }
+
+console.log(sum(50, 2))
