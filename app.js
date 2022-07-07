@@ -114,5 +114,34 @@ while (count <= 100) {
 // const isOdd = x => x % 2 !== 0
 // console.log(isOdd(15))
 
-const returnOne = x => x % 2 === 0 ?  1 :  -1 
-console.log(returnOne(-5))
+// const returnOne = x => x % 2 === 0 ?  1 :  -1 
+// console.log(returnOne(-5))
+
+// const loggedIn = (a, b) => a == "LOGGED_IN" || b == "SUBSCRIBED"
+// console.log(loggedIn('LOGGED_IN', 'SUBSCRIBEDs'))
+// document.querySelector('.no__results').innerHTML = `No results for ${search}. Please try another movie.`
+
+// const isItFalsy = (a, b) => a == false ? a : b /* or !a*/
+// console.log(isItFalsy(true, 'Dog'))
+
+// const arrLength = arr => arr.length
+// console.log(arrLength([]))
+// let sum = 0
+// function arrSum(arr) {
+//     for (i=0; i< arr.length; i++) {
+//         sum += arr[i]
+//     }
+//     return sum
+// }
+// console.log(arrSum([0, 1, 2, 1, 0]))
+
+let sum = 0
+
+function progressiveSum(num) {
+    for (i=0; i <= num; i++) {
+        sum += i
+    }
+    return sum
+}
+console.log(progressiveSum(2))
+
