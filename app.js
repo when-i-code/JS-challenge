@@ -162,20 +162,39 @@ while (count <= 100) {
 // }
 // console.log(calcTime(8))
 
-function calcTime(time) {
-    let min
-    let sec
+// function calcTime(time) {
+//     let min
+//     let sec
   
-    min = Math.floor(time / 60)
-    sec = time % 60
+//     min = Math.floor(time / 60)
+//     sec = time % 60
   
-    if (sec < 10) {
-      sec = "0" + sec
-    }
-    if (min < 10) {
-      min = "0" + min
-    }
+//     if (sec < 10) {
+//       sec = "0" + sec
+//     }
+//     if (min < 10) {
+//       min = "0" + min
+//     }
   
-    return `Time is ${min}:${sec}`
-  }
-  console.log(calcTime(805))
+//     return `Time is ${min}:${sec}`
+//   }
+//   console.log(calcTime(805))
+
+// let arr = [5, 100, 0, 111, 3, 0, -400, 125, 108]
+// function getMax(a, b) {
+//     return a - b
+// }
+// arr = arr.sort(getMax).pop()
+
+// console.log(arr)
+
+
+// let newString = ''
+function reverseString(string) {
+    // for( i = (string.length - 1); i >= 0 ; i--) {
+    //     newString += string[i]
+    // }
+    // return newString
+    return string.split('').reverse().join('')
+}
+console.log(reverseString('abc'))
