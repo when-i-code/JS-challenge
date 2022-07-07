@@ -190,11 +190,33 @@ while (count <= 100) {
 
 
 // let newString = ''
-function reverseString(string) {
-    // for( i = (string.length - 1); i >= 0 ; i--) {
-    //     newString += string[i]
-    // }
-    // return newString
-    return string.split('').reverse().join('')
-}
-console.log(reverseString('abc'))
+// function reverseString(string) {
+//     // for( i = (string.length - 1); i >= 0 ; i--) {
+//     //     newString += string[i]
+//     // }
+//     // return newString
+//     return string.split('').reverse().join('')
+// }
+// console.log(reverseString('abc'))
+
+// let arr = [1, 2, 3]
+// let zeroArr = arr.map(turnToZero)
+// function turnToZero(num) {
+//     return num * 0
+// }
+// console.log(zeroArr)
+
+let arr = ['abc','def','Apple','ijk']
+// function noApples(val) {
+//     return val != 'Apple'
+// }
+// console.log(arr.filter(noApples))
+function noApples(val) {
+        for (i=0; i<arr.length; i++) {
+            if (val[i] = 'Apple') {
+                return arr.splice(0, i)
+            }
+            return arr
+        }
+    }
+    console.log(arr.noApples())
