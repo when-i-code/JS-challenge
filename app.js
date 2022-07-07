@@ -135,13 +135,47 @@ while (count <= 100) {
 // }
 // console.log(arrSum([0, 1, 2, 1, 0]))
 
-let sum = 0
+// let sum = 0
 
-function progressiveSum(num) {
-    for (i=0; i <= num; i++) {
-        sum += i
+// function progressiveSum(num) {
+//     for (i=0; i <= num; i++) {
+//         sum += i
+//     }
+//     return sum
+// }
+// console.log(progressiveSum(2))
+// let min = 0
+// let sec = 0
+
+// function calcTime(time) {
+//     min = Math.floor(time/60)
+//     sec = time%60
+//     if (min.toString().length == 1 && sec.toString().length == 1){
+//         return `Time is 0${min}:0${sec}`
+//     } else if (min.toString().length > 1 && sec.toString().length == 1){
+//         return `Time is ${min}:0${sec}`}
+//       else if (min.toString().length == 1 && sec.toString().length > 1){
+//         return `Time is 0${min}:${sec}`}
+//     else {
+//         return `Time is ${min}:${sec}`
+//     }
+// }
+// console.log(calcTime(8))
+
+function calcTime(time) {
+    let min
+    let sec
+  
+    min = Math.floor(time / 60)
+    sec = time % 60
+  
+    if (sec < 10) {
+      sec = "0" + sec
     }
-    return sum
-}
-console.log(progressiveSum(2))
-
+    if (min < 10) {
+      min = "0" + min
+    }
+  
+    return `Time is ${min}:${sec}`
+  }
+  console.log(calcTime(805))
