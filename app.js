@@ -247,7 +247,6 @@ while (count <= 100) {
 // }
 // console.log(noFalsyy(["", [], 0, null, undefined, "0"]))
 
-
 // let val = ['Adriana', 0, 500, "", 'dog', null]
 // val = val.map(elem => !!elem)
 
@@ -257,3 +256,35 @@ while (count <= 100) {
 //   return val.map(elem => !!elem)
 // }
 // console.log(turnToBoolean(['Adriana', 0, 500, "", 'dog', null]))
+
+function toStars(y) {
+  let stars = [];
+  for (i = 1; i <= y; i++) {
+    stars.push(i);
+  }
+  return stars.map((elem) => "*").join("");
+}
+
+// function showRating(x) {
+//   if (Number.isInteger(x)) {
+//     console.log(`number ${x} is integer`)
+//   }
+//   else console.log(`number ${x} is not integer`)
+// }
+let stars = [];
+function showRating(x) {
+  if (Number.isInteger(x)) {
+    for (i = 1; i <= x; i++) {
+      stars.push(i);
+    }
+    return stars.map((elem) => "*").join("");
+  } else {
+    let starsPlus
+    let integer = parseInt(x)
+    for (j=1; j<=integer; j++) {
+      stars.push(j);
+    }
+    return starsPlus = stars.map((elem) => "*").join("") + '.'
+  }
+}
+console.log(showRating(0.5));
