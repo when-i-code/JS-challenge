@@ -84,7 +84,6 @@ while (count <= 100) {
 // register("Adasda", "asasd", "asdasdas")
 // console.log(users)
 
-
 // function changeColor() {
 //     console.log('it clicked')
 //     document.querySelector('h1').style.color = 'red'
@@ -114,7 +113,7 @@ while (count <= 100) {
 // const isOdd = x => x % 2 !== 0
 // console.log(isOdd(15))
 
-// const returnOne = x => x % 2 === 0 ?  1 :  -1 
+// const returnOne = x => x % 2 === 0 ?  1 :  -1
 // console.log(returnOne(-5))
 
 // const loggedIn = (a, b) => a == "LOGGED_IN" || b == "SUBSCRIBED"
@@ -165,17 +164,17 @@ while (count <= 100) {
 // function calcTime(time) {
 //     let min
 //     let sec
-  
+
 //     min = Math.floor(time / 60)
 //     sec = time % 60
-  
+
 //     if (sec < 10) {
 //       sec = "0" + sec
 //     }
 //     if (min < 10) {
 //       min = "0" + min
 //     }
-  
+
 //     return `Time is ${min}:${sec}`
 //   }
 //   console.log(calcTime(805))
@@ -187,7 +186,6 @@ while (count <= 100) {
 // arr = arr.sort(getMax).pop()
 
 // console.log(arr)
-
 
 // let newString = ''
 // function reverseString(string) {
@@ -206,17 +204,27 @@ while (count <= 100) {
 // }
 // console.log(zeroArr)
 
-let arr = ['abc','def','Apple','ijk']
+// let arr = ["abc", "def", "Apple", "ijk", "last"];
 // function noApples(val) {
 //     return val != 'Apple'
 // }
 // console.log(arr.filter(noApples))
-function noApples(val) {
-        for (i=0; i<arr.length; i++) {
-            if (val[i] = 'Apple') {
-                return arr.splice(0, i)
-            }
-            return arr
-        }
-    }
-    console.log(arr.noApples())
+
+// let newArr = []
+// let original = []
+// function noApples(val) {
+//   original = val
+//   console.log('this is original: ' + val)
+//   for (i = 0; i < val.length; i++) {
+//     if (val[i] !== "Apple") {
+//       newArr.push(val[i]);
+//     }
+//   }
+//   return ` New array is ${newArr} and old one is ${original}`;
+// }
+// console.log(noApples(["1", "2", "Apple", "3", "4"]))
+
+function noApples(arr) {
+  return arr.filter(string => string !== 'Apples')
+}
+console.log(noApples(["1", "2", "Apple", "3", "4"]))
