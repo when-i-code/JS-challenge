@@ -246,3 +246,14 @@ while (count <= 100) {
 //   return newArr
 // }
 // console.log(noFalsyy(["", [], 0, null, undefined, "0"]))
+
+
+// let val = ['Adriana', 0, 500, "", 'dog', null]
+// val = val.map(elem => !!elem)
+
+// console.log(val)
+
+// function turnToBoolean(val) {
+//   return val.map(elem => !!elem)
+// }
+// console.log(turnToBoolean(['Adriana', 0, 500, "", 'dog', null]))
