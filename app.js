@@ -224,7 +224,25 @@ while (count <= 100) {
 // }
 // console.log(noApples(["1", "2", "Apple", "3", "4"]))
 
-function noApples(arr) {
-  return arr.filter(string => string !== 'Apples')
-}
-console.log(noApples(["1", "2", "Apple", "3", "4"]))
+// function noApples(arr) {
+//   return arr.filter(string => string !== 'Apples')
+// }
+// console.log(noApples(["1", "2", "Apple", "3", "4"]))
+
+// function noFalsy (value) {
+//   return value.filter(elem => elem)
+// }
+// console.log(noFalsy(["", [], 0, null, undefined, "0"]))
+// console.log(noFalsy(['Tomato', 'Orange', false, 'Banana','', null, 'Cherry']))
+
+// function noFalsyy(val) {
+//   let newArr =[]
+
+//   for( i=0; i<val.length; i++) {
+//     if(!!val[i] === true) {
+//       newArr.push(val[i])
+//     }
+//   }
+//   return newArr
+// }
+// console.log(noFalsyy(["", [], 0, null, undefined, "0"]))
